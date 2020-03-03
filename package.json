@@ -1,0 +1,53 @@
+{
+  "name": "sova-server",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "test": "cross-env NODE_ENV=test jest --testTimeout=10000",
+    "test user": "cross-env NODE_ENV=test jest User --testTimeout=10000",
+    "test abs": "cross-env NODE_ENV=test jest AbstractEntity --testTimeout=10000",
+    "test bra": "cross-env NODE_ENV=test jest BaseRegionAccess --testTimeout=10000",
+    "test ra": "cross-env NODE_ENV=test jest RegionAccess --testTimeout=10000",
+    "db": "docker-compose up",
+    "db:stop": "docker-compose down",
+    "db:create-user": "docker-compose exec db bash -c 'source /home/oracle/.bashrc; sqlplus sys/Oradoc_db1@ORCLCDB as sysdba @/home/oracle/sql/init.sql'",
+    "db:clear": "node ./utils/clearDb/clearDb.js"
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "body-parser": "^1.19.0",
+    "bottlejs": "^1.7.2",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-prettier": "^3.1.2",
+    "express": "~4.16.1",
+    "express-async-errors": "^3.1.1",
+    "moment": "^2.24.0",
+    "morgan": "^1.9.1",
+    "node-xlsx": "^0.15.0",
+    "oracledb": "^4.1.0",
+    "uuid": "^3.4.0"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "coveragePathIgnorePatterns": [
+      "/node_modules/"
+    ]
+  },
+  "devDependencies": {
+    "@types/jest": "^24.9.0",
+    "@types/oracledb": "^4.2.0",
+    "cors": "^2.8.5",
+    "cross-env": "^6.0.3",
+    "eslint-config-prettier": "^6.10.0",
+    "jest": "^24.9.0",
+    "node-excel-export": "^1.4.4",
+    "node-xlsx": "^0.15.0",
+    "nodemon": "^2.0.2",
+    "prettier": "^1.19.1",
+    "supertest": "^4.0.2"
+  }
+}

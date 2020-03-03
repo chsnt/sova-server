@@ -1,0 +1,6 @@
+/.idea/
+/.vscode/
+/node_modules/
+/routes/sql/company
+/docker/oracle/volumes/ORCL/
+/~$xlsx

@@ -1,0 +1,9 @@
+{
+  "extends": [
+    "airbnb",
+    "prettier",
+    "prettier/node"
+  ],
+  "tabWidth": 2,
+  "useTabs": false
+}

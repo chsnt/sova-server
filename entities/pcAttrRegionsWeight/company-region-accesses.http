@@ -1,0 +1,25 @@
+PUT http://localhost:3000/api/company/company-region-accesses
+Cookie:uid='2aa6daceac5dece94605cc230694355ea3d3328c41f9f579bae458f270055e68'
+Content-Type: application/json
+
+[{"ID":3113,"ID_COMPANY":1055,"STATE":"Воронежская область","ENG_NAME":["RES_REALTY_WITH_LAND"],"ABBREVIATION":[]}]
+
+<> 2020-01-24T044102.200.html
+
+
+###
+http://10.216.3.255:3000/api/company/company-region-accesses
+Cookie:uid='2aa6daceac5dece94605cc230694355ea3d3328c41f9f579bae458f270055e68'
+Content-Type: application/json
+
+{"ID":3113}
+
+
+<> 2020-01-24T044114.200.html
+
+
+
+
+###
+
+
