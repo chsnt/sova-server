@@ -14,8 +14,8 @@ bottle.factory('pool', () => {
         throw new Error('no prod by now')
         config = {
             user: "sova",
-            password: "qazxsw22",
-            connectString: "apurz001.open.ru:1521/ORCLCDB.localdomain",
+            password: "",
+            connectString: "*:1521/ORCLCDB.localdomain",
             poolMin: 1,
             poolMax: 50,
             poolTimeout: 3
@@ -25,7 +25,7 @@ bottle.factory('pool', () => {
         config = {
             user: "sova",
             password: "sova",
-            connectString: "apurz001.open.ru:1530/ORCLCDB.localdomain",
+            connectString: "*:1530/ORCLCDB.localdomain",
             poolMin: 1,
             poolMax: 50,
             poolTimeout: 3
